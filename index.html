@@ -16,6 +16,9 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="page-header">
@@ -36,6 +39,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-btn">
+          <svg class="menu-open-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-icon-menu"></use>
+          </svg>
+        </button>
         <address class="address">
           <ul class="address-list list">
             <li class="address-item">
@@ -51,22 +59,100 @@
           </ul>
         </address>
       </div>
+      <!-- MOBILE MENU -->
+      <!-- <div class="mobile-menu">
+        <div class="mobile-menu-container container">
+          <button type="button" class="menu-close-btn" data-modal-close>
+            <svg class="menu-close-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="nav-mobile">
+            <ul class="mobile-nav list">
+              <li class="mobile-nav-item">
+                <a href="./index.html" class="mobile-nav-link link current"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-nav-item">
+                <a href="./portfolio.html" class="mobile-nav-link link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-nav-item">
+                <a href="" class="mobile-nav-link link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="connection-wrapper">
+            <address class="mobile-menu-address">
+              <ul class="mobile-address-list list">
+                <li class="mobile-address-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mobile-address-link link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="mobile-address-item">
+                  <a href="tel:+110001111111" class="mobile-address-link link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="mobile-menu-social">
+              <ul class="mobile-social-list list">
+                <li class="mobile-social-item">
+                  <a href="" class="mobile-social-link icon-link">
+                    <svg class="mobile-social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-social-item">
+                  <a href="" class="mobile-social-link icon-link">
+                    <svg class="mobile-social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-social-item">
+                  <a href="" class="mobile-social-link icon-link">
+                    <svg class="mobile-social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-social-item">
+                  <a href="" class="mobile-social-link icon-link">
+                    <svg class="mobile-social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- /MOBILE MENU -->
     </header>
 
     <main class="page-main">
       <!-- Hero section -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn btn" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
       <!-- /Hero section -->
 
       <!-- Principles of work section -->
-      <section class="principles">
+      <!-- <section class="principles">
         <div class="container">
           <h2 class="principles-title title visually-hidden">
             Principles of work
@@ -124,17 +210,21 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- /Principles of work section -->
 
       <!-- What are we doing section -->
-      <section class="product section">
+      <!-- <section class="product section">
         <div class="container">
           <h2 class="product-title title">What are we doing</h2>
           <ul class="product-list wrapper list">
             <li class="product-item">
               <img
-                src="./images/what-are-we-doing-1.jpg"
+                srcset="
+                  ./images/what-are-we-doing-1-desktop.jpg    1x,
+                  ./images/what-are-we-doing-1-desktop-2x.jpg 2x
+                "
+                src="./images/what-are-we-doing-1-desktop.jpg"
                 alt="An example of work  on the monitor"
                 width="360"
                 height="300"
@@ -142,7 +232,11 @@
             </li>
             <li class="product-item">
               <img
-                src="./images/what-are-we-doing-2.jpg"
+                srcset="
+                  ./images/what-are-we-doing-2-desktop.jpg    1x,
+                  ./images/what-are-we-doing-2-desktop-2x.jpg 2x
+                "
+                src="./images/what-are-we-doing-2-desktop.jpg"
                 alt="An example of work on a
             smartphone"
                 width="360"
@@ -151,7 +245,11 @@
             </li>
             <li class="product-item">
               <img
-                src="./images/what-are-we-doing-3.jpg"
+                srcset="
+                  ./images/what-are-we-doing-3-desktop.jpg    1x,
+                  ./images/what-are-we-doing-3-desktop-2x.jpg 2x
+                "
+                src="./images/what-are-we-doing-3-desktop.jpg"
                 alt="An example of work on a laptop and a smartphone"
                 width="360"
                 height="300"
@@ -159,16 +257,20 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- /What are we doing section -->
 
       <!-- Our Team section-->
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="team-title title">Our Team</h2>
           <ul class="team-list wrapper list">
             <li class="team-item">
               <img
+                srcset="
+                  ./images/our-team-1.jpg    1x,
+                  ./images/our-team-1-2x.jpg 2x
+                "
                 src="./images/our-team-1.jpg"
                 alt="Photo of the employee"
                 width="264"
@@ -211,6 +313,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/our-team-2.jpg    1x,
+                  ./images/our-team-2-2x.jpg 2x
+                "
                 src="./images/our-team-2.jpg"
                 alt="Photo of the employee"
                 width="264"
@@ -253,6 +359,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/our-team-3.jpg    1x,
+                  ./images/our-team-3-2x.jpg 2x
+                "
                 src="./images/our-team-3.jpg"
                 alt="Photo of the employee"
                 width="264"
@@ -295,6 +405,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/our-team-4.jpg    1x,
+                  ./images/our-team-4-2x.jpg 2x
+                "
                 src="./images/our-team-4.jpg"
                 alt="Photo of the employee"
                 width="264"
@@ -337,11 +451,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- /Our Team section-->
 
       <!-- Customers section -->
-      <section class="customer section">
+      <!-- <section class="customer section">
         <div class="container">
           <h2 class="customers-title title">Customers</h2>
           <ul class="customers-list wrapper list">
@@ -389,11 +503,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- /Customers section -->
     </main>
 
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="footer-wrapper container">
         <div class="footer-info">
           <a href="./index.html" class="footer-logo link">
@@ -457,13 +571,13 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-modal"></use>
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p class="modal-form-desc">
@@ -551,8 +665,8 @@
           <button type="submit" class="modal-form-btn btn">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>

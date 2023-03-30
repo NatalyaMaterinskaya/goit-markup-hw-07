@@ -1,0 +1,107 @@
+@media screen and (max-width: 479px) {
+    .mobile-address-item:last-child{
+    font-size: 24px;
+}
+}
+@media screen and (min-width: 480px) {
+    .container{
+    max-width: 428px;
+}
+}
+@media screen and (max-width: 767px) {
+.site-nav{
+    display: none;
+}
+.address{
+    display: none;
+}
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    min-height: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.mobile-menu-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    padding-left:40px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-size: 36px;
+    line-height: 1.11;
+    font-weight: 700;
+}
+.menu-close-btn{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    color: var(--secondary-color);
+    background-color: rgb(231, 233, 252, 0.1);;
+    border: 1px solid rgb(46, 47, 66, 0.1);
+    border-radius: 50%;
+}
+.menu-close-btn-icon{
+    fill: currentColor;
+}
+.connection-wrapper{
+    margin-top: auto;
+} 
+.mobile-nav-link {
+   display: inline-block;
+   color: var(--secondary-color); 
+   margin-bottom: 40px;
+}
+.mobile-nav-link.current{
+    color: var(--accent-color);
+}
+.mobile-address-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.mobile-address-item:first-child{
+    order:1;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 48px;
+}
+.mobile-address-item:first-child > .mobile-address-link{
+    color: var(--main-color);
+}
+.mobile-address-item:last-child{
+    order:-1;
+}
+.mobile-address-link {
+   font-style: normal;
+   color: var(--accent-color); 
+}
+.mobile-social-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mobile-social-item{
+    width: 40px;
+    height: 40px;
+}
+.mobile-social-link{
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: #F4F4FD;
+}
+.mobile-social-icon{
+    fill:currentColor;
+}
+}
