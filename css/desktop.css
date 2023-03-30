@@ -2,4 +2,20 @@
     .container{
     max-width: 1158px;
 }
+.header-logo {
+margin-right: 76px;
+}
+.address{
+    padding: 0;
+}
+.address-list{
+    flex-direction: row;
+    gap: 40px;
+}
+.address-link {
+    font-size: var(--main-font-size);
+    line-height: var(--main-line-height);
+    letter-spacing: var(--main-letter-spacing);
+    padding: 24px 0;
+}
 }
