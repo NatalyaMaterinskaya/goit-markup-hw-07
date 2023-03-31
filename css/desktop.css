@@ -1,7 +1,20 @@
 @media screen and (min-width: 1200px) {
-    .container{
+.container{
     max-width: 1158px;
 }
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.subtitle{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.wrapper{
+    gap: var(--main-gap);
+}
+/*-----------------------------Header---------------------------------*/
 .header-logo {
 margin-right: 76px;
 }
@@ -18,4 +31,61 @@ margin-right: 76px;
     letter-spacing: var(--main-letter-spacing);
     padding: 24px 0;
 }
+/*-----------------------------/Header---------------------------------*/
+
+/*---------------------------- Hero--------------------------------------------- */
+.hero{
+    max-width: 1440px;
+    padding-top: 180px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+                      url('../images/hero-bg-desktop.jpg');
+}
+@media screen and (min-device-pixel-ratio:2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx){
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+                      url('../images/hero-bg-desktop-2x.jpg'); 
+    }
+}
+.hero-title{
+    margin-bottom: 48px;
+}
+/*---------------------------- /Hero--------------------------------------------- */
+
+/* -----------------------------Principles of work section-------------------------------------------- */
+.principles{
+    padding-top: 120px;
+    padding-bottom: 0px;
+}
+.principles-item{
+    width: calc((100% - 3 * 24px) / 4);
+}
+.principles-wrapper-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.principles-desc{
+    font-weight: 400;
+}
+/* -----------------------------/Principles of work section-------------------------------------------- */
+
+/*------------------------------ What are we doing section---------------------------------------- */
+.product-item{
+    width: calc((100% - 2 * 24px) / 3);
+}
+/*------------------------------ /What are we doing section---------------------------------------- */
+
+/*------------------------------ Our Team---------------------------------------- */
+.team-item{
+    width: calc((100% - 3 * 24px) / 4);
+}
+/*------------------------------ /Our Team---------------------------------------- */
 }

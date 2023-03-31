@@ -7,7 +7,25 @@
 .container{
     max-width: 428px;
 }
+
+/*---------------------------- Hero--------------------------------------------- */
+.hero{
+    max-width: 428px;
 }
+.hero-title{
+    width: 320px;
+    font-size: 36px;
+}
+/*---------------------------- /Hero--------------------------------------------- */
+
+/* -----------------------------Principles of work section-------------------------------------------- */
+.principles-item{
+    text-align: start;
+}
+/* -----------------------------/Principles of work section-------------------------------------------- */
+}
+
+/*---------------------------- MOBILE MENU--------------------------------------------- */
 @media screen and (max-width: 767px) {
 .mobile-menu-btn{
     background-color: transparent;
@@ -122,4 +140,6 @@
 .mobile-social-icon{
     fill:currentColor;
 }
+/*---------------------------- /MOBILE MENU--------------------------------------------- */
+
 }

@@ -55,9 +55,10 @@ button{
     margin-bottom: 72px;
 }
 .subtitle{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
     color: var(--secondary-color);
     margin-bottom: 8px;
 }
@@ -90,14 +91,15 @@ button{
 }
 
 .section{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .wrapper{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: var(--main-gap);
+    gap: 72px;
 }
 
 .icon-link{
@@ -140,28 +142,36 @@ button{
 
 /*---------------------------- Hero--------------------------------------------- */
 .hero{
-    max-width: 1440px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(46, 47, 66, 0.7);
-    padding-top: 180px;
-    padding-bottom: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-                      url('../images/hero-bg-desktop.jpg');
+                      url('../images/hero-bg-mob.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+@media screen and (min-device-pixel-ratio:2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx){
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+                      url('../images/hero-bg-mob-2x.jpg'); 
+    }
+}
 .hero-title{
-    width: 496px;
+    width: 250px;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 28px;
+    line-height: 1.11;
     text-align: center;
     color: var(--white-color);
     margin-left: auto;
     margin-right: auto; 
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 }
 .hero-btn{
     background-color: var(--accent-color);
@@ -182,37 +192,30 @@ button{
 
 /* -----------------------------Principles of work section-------------------------------------------- */
 .principles{
-    padding-top: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .principles-item{
-    width: calc((100% - 3 * 24px) / 4)
+    width: 100%;
+    text-align: center;
 }
-.principles-wrapper-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 264px;
-    height: 112px;
-    background-color: #F4F4FD;
-    border-radius: 4px;
-    margin-bottom: 8px;
+.principles-desc{
+    font-weight: 500;
 }
 /* -----------------------------/Principles of work section-------------------------------------------- */
 
 
-/*------------------------------ What are we doing section---------------------------------------- */
-.product-item{
-    width: calc((100% - 2 * 24px) / 3);
-}
-/*------------------------------ /What are we doing section---------------------------------------- */
 
 
 /*------------------------------ Our Team---------------------------------------- */
 .team{
     background-color: #F4F4FD;
 }
+.team-list{
+    align-items: center;
+}
 .team-item{
-    width: calc((100% - 3 * 24px) / 4);
+    max-width: 264px;
 }
 .team-text-box{
     background: #FFFFFF;
@@ -221,14 +224,18 @@ button{
     border-radius: 0px 0px 4px 4px;
 }
 .team-subtitle{
-    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
 }
 .team-desc{
     text-align: center;
     margin-bottom: 8px;
 }
 .team-social-list{
+    flex-direction: row;
     justify-content: center;
+    gap: var(--main-gap);
 }
 .team-social-item{
     width: 40px;
@@ -243,7 +250,6 @@ button{
 .team-social-link:hover,
 .team-social-link:focus{   
     background-color: #404BBF;
- 
 }
 .team-social-icon{
     fill:currentColor;
@@ -253,9 +259,12 @@ button{
 /*------------------------------ Customers section -------------------------------------*/
 .customers-list{
     justify-content: center;
+    flex-direction: row;
+    column-gap: 16px;
+    row-gap: 72px;
 }
 .customers-item{
-    width: 168px;
+    width: 190px;
     height: 88px;
 }
 .customers-logo-link{

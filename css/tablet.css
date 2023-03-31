@@ -2,12 +2,21 @@
 .container{
     max-width: 768px;
 }
+.subtitle{
+    text-align:start;
+}
+.wrapper{
+    flex-direction: row;
+    column-gap: 35px;
+    row-gap: 72px;
+}
+/*-----------------------------Header---------------------------------*/
 .mobile-menu,
 .mobile-menu-btn{
     display: none;
 }
 .header-logo {
-margin-right: 120px;
+    margin-right: 120px;
 }
 .site-nav{
     display: flex;
@@ -58,5 +67,72 @@ margin-right: 120px;
 .address-link:hover,
 .address-link:focus{
     color: var(--accent-color);
+}
+/*-----------------------------/Header---------------------------------*/
+
+/*---------------------------- Hero--------------------------------------------- */
+.hero{
+    max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+                      url('../images/hero-bg-tab.jpg');
+}
+@media screen and (min-device-pixel-ratio:2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx){
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+                      url('../images/hero-bg-tab-2x.jpg'); 
+    }
+}
+.hero-title{
+    width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+}
+/*---------------------------- /Hero--------------------------------------------- */
+
+/* -----------------------------Principles of work section-------------------------------------------- */
+.principles-item{
+     width: calc((100% - 35px) / 2);
+}
+
+/* -----------------------------/Principles of work section-------------------------------------------- */
+
+/*------------------------------ Our Team---------------------------------------- */
+.team-list{
+    column-gap: 24px;
+    row-gap: 64px;
+}
+.team-list{
+    justify-content: center;
+}
+.team-item{
+    width: calc((100% - 24px) / 2);
+}
+.team-subtitle{
+    text-align: center;
+}
+.team-social-list{
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--main-gap);
+}
+/*------------------------------ /Our Team---------------------------------------- */
+
+/*------------------------------ Customers section -------------------------------------*/
+.customers-item{
+    width: 168px;
+    height: 88px;
+}
+.customers-list{
+    column-gap: 24px;
+}
+/*------------------------------ /Customers section -------------------------------------*/
+}
+@media screen and (max-width: 1199px) {
+.principles-wrapper-icon,
+.product{
+    display: none;
 }
 }
