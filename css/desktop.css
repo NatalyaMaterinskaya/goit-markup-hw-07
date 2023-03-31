@@ -88,4 +88,28 @@ screen and (min-resolution: 2dppx){
     width: calc((100% - 3 * 24px) / 4);
 }
 /*------------------------------ /Our Team---------------------------------------- */
+
+/*------------------------------ Footer ----------------------------------------*/
+.page-footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer-wrapper{
+    justify-content: flex-start;
+}
+.footer-info{
+    max-width: 264px;
+    margin-right: 120px;
+}
+.footer-logo{
+    text-align: start;
+}
+.footer-social{
+    margin-right: 80px;
+}
+.footer-social-desc{
+        text-align: start;
+}
+/*------------------------------ /Footer ----------------------------------------*/
+
 }

@@ -285,40 +285,41 @@ screen and (min-resolution: 2dppx){
 
 /*------------------------------ Footer ----------------------------------------*/
 .footer-desc{
-    font-weight: 500;
-    color: var(--white-color);
-    margin-bottom: 16px;
+    color: #F4F4FD;
 }
-
 .page-footer{
     background-color: var(--secondary-color);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .footer-wrapper{
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    justify-content: center;
 }
 .footer-info{
-    max-width: 264px;
-    margin-right: 120px;
+    max-width: 268px;
 }
 .footer-logo{
-    display: inline-block;
+    display: block;
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
     color: #F4F4FD;
     margin-bottom:16px;
 }
-.footer-desc{
-    color:#E7E9FC;
-}
 .footer-social{
     max-width: 208px;
-    margin-right: 80px;
+}
+.footer-social-desc{
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 16px;
 }
 .footer-social-list{
     display: flex;
@@ -332,7 +333,7 @@ screen and (min-resolution: 2dppx){
 }
 .footer-social-link{
     border-radius: 50%;
-    background-color: var(--main-color);
+    background-color: var(--accent-color);
     color: #F4F4FD;
     transition: background-color var(--transition-dur-and-func);
 }
