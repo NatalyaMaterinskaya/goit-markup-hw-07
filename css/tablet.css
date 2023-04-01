@@ -129,10 +129,32 @@ screen and (min-resolution: 2dppx){
     column-gap: 24px;
 }
 /*------------------------------ /Customers section -------------------------------------*/
-}
 
 /*------------------------------ Footer ----------------------------------------*/
+.footer-desc{
+    text-align: start;
+}
+.footer-info{
+    max-width: 264px;
+    margin-right: 24px;
+}
+.footer-logo{
+    text-align: start;
+}
+.footer-form-desc{
+    margin-left: 120px;
+}
+.footer-form{
+    margin-left: 120px;
+    justify-content: flex-start;
+    gap: var(--main-gap);
+}
+.footer-form-input{
+    width: 264px;
+    font-size: 18px; 
+}
 /*------------------------------ /Footer ----------------------------------------*/
+}
 @media screen and (max-width: 1199px) {
 .principles-wrapper-icon,
 .product{

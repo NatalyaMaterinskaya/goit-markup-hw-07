@@ -98,18 +98,16 @@ screen and (min-resolution: 2dppx){
     justify-content: flex-start;
 }
 .footer-info{
-    max-width: 264px;
     margin-right: 120px;
-}
-.footer-logo{
-    text-align: start;
 }
 .footer-social{
     margin-right: 80px;
 }
-.footer-social-desc{
-        text-align: start;
+.footer-form-group{
+    max-width: 454px;
+}
+.footer-form{
+    margin-left: 0px;
 }
 /*------------------------------ /Footer ----------------------------------------*/
-
 }
