@@ -204,9 +204,6 @@ screen and (min-resolution: 2dppx){
 }
 /* -----------------------------/Principles of work section-------------------------------------------- */
 
-
-
-
 /*------------------------------ Our Team---------------------------------------- */
 .team{
     background-color: #F4F4FD;
@@ -497,12 +494,15 @@ screen and (min-resolution: 2dppx){
     opacity: 1;
     transform: translate(-50%,-50%) scale(1);
     transition: opacity var(--transition-dur-and-func),transform var(--transition-dur-and-func);
-    width: 408px;
+    width: 100%;
     height: 584px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #FCFCFC;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.2)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
     border-radius: 4px;
-    padding: 72px 24px 24px;
+    padding-top: 72px;
+    padding-bottom:  24px;
+    padding-left:  16px;
+    padding-right:  16px;
 }
 .backdrop.is-hidden .modal{
     opacity: 0;
@@ -518,8 +518,8 @@ screen and (min-resolution: 2dppx){
     width: 24px;
     height: 24px;
     color: var(--secondary-color);
-    background-color: rgba(231, 233, 252, 0.1);
-    border: 1px solid rgba(46, 47, 66, 0.1);
+    background-color: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), border-color var(--transition-dur-and-func);
 }
@@ -536,7 +536,7 @@ screen and (min-resolution: 2dppx){
 
 /*===========================MODAL FORM========================== */
 .modal-form-field{
-    border: 1px solid rgba(46, 47, 66, 0.2);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     color: var(--secondary-color);
     font-size: 18px;  
@@ -547,13 +547,13 @@ screen and (min-resolution: 2dppx){
     line-height: 1.17;
     letter-spacing: 0.04em;
 }
-
 .modal-form{
     display: flex;
     flex-direction: column;
 }
 .modal-form-desc{
     font-weight: 500;
+    font-size: 13px;
     color: var(--secondary-color);
     margin-bottom: 16px;
     text-align: center;
@@ -562,7 +562,7 @@ screen and (min-resolution: 2dppx){
     margin-bottom: 8px;
 }
 .modal-form-group:nth-child(4){
-    margin-bottom: 17px;
+    margin-bottom: 18px;
 }
 .modal-form-input-desc{
     display: block;
@@ -575,7 +575,7 @@ screen and (min-resolution: 2dppx){
 .modal-form-input{
     width: 100%;
     height: 40px;
-    padding-left: 38px;
+    padding-left: 34px;
     transition: border-color var(--transition-dur-and-func);
 }
 .modal-form-input:focus{
@@ -602,7 +602,7 @@ screen and (min-resolution: 2dppx){
     transition: border-color var(--transition-dur-and-func);
 }
 .modal-form-message::placeholder{
-    color: rgba(46, 47, 66, 0.4);
+    color: rgb(142, 143, 153, 0.5);
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -613,6 +613,8 @@ screen and (min-resolution: 2dppx){
 }
 .modal-form-check-desc{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     margin-bottom: 24px;
 }
@@ -622,7 +624,7 @@ screen and (min-resolution: 2dppx){
     align-items: center;
     width: 16px;
     height: 16px;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     cursor: pointer;
     margin-right: 8px;

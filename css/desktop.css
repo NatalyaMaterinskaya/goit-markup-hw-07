@@ -16,7 +16,7 @@
 }
 /*-----------------------------Header---------------------------------*/
 .header-logo {
-margin-right: 76px;
+    margin-right: 76px;
 }
 .address{
     padding: 0;
@@ -106,8 +106,23 @@ screen and (min-resolution: 2dppx){
 .footer-form-group{
     max-width: 454px;
 }
+.footer-form-desc{
+    margin-left: 0px;
+}
 .footer-form{
     margin-left: 0px;
 }
 /*------------------------------ /Footer ----------------------------------------*/
+/*===========================MODAL WINDOW========================== */
+.modal{
+    width: 408px;
+    height: 584px;
+}
+.modal-form-input{
+    padding-left: 38px;
+}
+.modal-form-group:nth-child(4){
+    margin-bottom: 16px;
+}
+/*===========================/MODAL WINDOW========================== */
 }
