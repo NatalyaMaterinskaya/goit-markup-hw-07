@@ -72,8 +72,7 @@
 
 /*---------------------------- Hero--------------------------------------------- */
 .hero{
-    max-width: 768px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
                       url('../images/hero-bg-tab.jpg');
 }
 @media screen and (min-device-pixel-ratio:2),
