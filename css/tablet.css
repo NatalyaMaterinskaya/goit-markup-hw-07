@@ -10,6 +10,7 @@
     column-gap: 35px;
     row-gap: 72px;
 }
+/* ========================== Studio page============================ */
 /*-----------------------------Header---------------------------------*/
 .mobile-menu,
 .mobile-menu-btn{
@@ -153,6 +154,30 @@ screen and (min-resolution: 2dppx){
     font-size: 18px; 
 }
 /*------------------------------ /Footer ----------------------------------------*/
+/* ========================== /Studio page============================ */
+
+/*===========================Portfolio page========================== */
+.portfolio{
+     padding-top: 64px;
+     padding-bottom: 96px;
+}
+.portfolio-list-filter{
+     max-width: 100%;
+     justify-content: center; 
+     margin-bottom: 64px;
+}
+.portfolio-btn{
+    padding: 12px 24px;
+}
+.portfolio-list-product{
+    row-gap: 72px;
+}
+.portfolio-item-product{
+   width: calc((100% - 24px) / 2); 
+}
+
+/* TO DO */
+/*===========================/Portfolio page========================== */
 
 /*===========================MODAL WINDOW========================== */
 .modal{

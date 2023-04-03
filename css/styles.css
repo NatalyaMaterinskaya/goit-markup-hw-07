@@ -392,21 +392,24 @@ screen and (min-resolution: 2dppx){
 
 /*===========================Portfolio page========================== */
 .portfolio{
-     padding-top: 96px;
-     padding-bottom: 120px;
+     padding-top: 48px;
+     padding-bottom: 48px;
 }
 .portfolio-list-filter{
+     max-width: 378px;
      display: flex;
-     justify-content: center;
-     gap: var(--main-gap);    
-     margin-bottom: 72px;
+     flex-wrap: wrap;
+     justify-content: start;
+     column-gap: var(--main-gap);    
+     row-gap: 16px;
+     margin-bottom: 48px;
 }
 .portfolio-btn{
     background-color: #F4F4FD;
     color: var(--accent-color);
     border: 1px solid #E7E9FC;
     border-radius: 4px;
-    padding: 12px 24px;
+    padding: 8px 16px;   
     transition: background-color var(--transition-dur-and-func),
                 color var(--transition-dur-and-func),
                 border-color var(--transition-dur-and-func),
@@ -427,7 +430,7 @@ screen and (min-resolution: 2dppx){
     row-gap: 48px;
 }
 .portfolio-item-product{
-   width: calc((100% - 2 * 24px) / 3); 
+   width: 100%; 
 } 
 .portfolio-item-link{
     display: block;

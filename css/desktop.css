@@ -14,6 +14,7 @@
 .wrapper{
     gap: var(--main-gap);
 }
+/* ========================== Studio page============================ */
 /*-----------------------------Header---------------------------------*/
 .header-logo {
     margin-right: 76px;
@@ -113,6 +114,24 @@ screen and (min-resolution: 2dppx){
     margin-left: 0px;
 }
 /*------------------------------ /Footer ----------------------------------------*/
+/* ========================== /Studio page============================ */
+
+/*===========================Portfolio page========================== */
+.portfolio{
+     padding-top: 100px;
+     padding-bottom: 120px;
+}
+.portfolio-list-filter{
+     margin-bottom: 72px;
+}
+.portfolio-list-product{
+    row-gap: 48px;
+}
+.portfolio-item-product{
+   width: calc((100% - 2 * 24px) / 3); 
+}
+/*===========================/Portfolio page========================== */
+
 /*===========================MODAL WINDOW========================== */
 .modal{
     width: 408px;
