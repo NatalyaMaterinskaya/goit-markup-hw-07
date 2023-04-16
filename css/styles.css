@@ -464,7 +464,14 @@ screen and (min-resolution: 2dppx){
 .portfolio-item-link:focus .overlay{  
     transform: translate(0);
 }
+.portfolio-subtitle{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.2;
+    text-align: start;
+}
 .portfolio-text-box{
+   max-width: 396px;
    padding: 32px 16px;
    border: 1px solid #E7E9FC;
    border-top:none;
